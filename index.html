@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .city_and_country h1{
+            display: inline;
+        }
+        #show_temp{
+            font-size: 25px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="get_input_city_name" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button id="search_btn" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="status_icon" alt="status">
+            <div class="city_and_country">
+                <h1 id="show">City</h1>
+                <h1>, </h1>
+                <h1 id="country">country</h1>
+            </div>
+            <h3><span id="show_temp">0</span>&deg;C</h3>
+            <h2 id="show_status">Clouds</h2>
+            <h4>Wind Speed: <span id="wind_speed">0</span> km/hr</h4>
+        </div>
+    </div>
+
+    <script src="app.js">
+        
+    </script>
+</body>
+</html>
